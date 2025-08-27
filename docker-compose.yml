@@ -1,0 +1,17 @@
+version: "3.9"
+
+networks:
+  nginx_network:
+    external: true
+
+services:
+  smartchat:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: smartchat_V1
+    restart: unless-stopped
+    networks:
+      - nginx_network
+    ports:
+      - "8501:8501"

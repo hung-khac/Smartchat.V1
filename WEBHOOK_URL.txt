@@ -1,0 +1,1 @@
+https://n8n.automindx.app/webhook/smartchatv1
